@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class Project::AlphaTest < ActiveSupport::TestCase
-  test 'class' do
-    assert_equal 'Project::Alpha', Project::Alpha.name
+  test 'super' do
+    assert_equal 'Project::Standard', Project::Alpha.superclass.name
   end
 
   test 'init' do
